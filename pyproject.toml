@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "govee-bluetooth"
+version = "0.1.0"
+description = "Control Govee devices via Bluetooth"
+authors = ["Patrik Janoušek <pj@patrikjanousek.cz>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "govee_bluetooth"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+bleak = "^0.21.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
